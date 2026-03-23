@@ -10,6 +10,7 @@ __pycache__/
 
 # CMake and build directories
 build/
+build_*/
 cmake-build-*/
 **/CMakeFiles/
 **/CMakeCache.txt
@@ -70,6 +71,11 @@ cmake-build-*/
 /ts_demo
 /tsne_demo
 /znorm
+
+# Chapter-local demo binaries
+/chapter_1/example
+/chapter_1/mnist_fc
+/chapter_2/data_pipeline/custom_dataset_demo
 
 # Generated demo artifacts
 /out_*.jpg
