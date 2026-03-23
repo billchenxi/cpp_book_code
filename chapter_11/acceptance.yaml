@@ -1,0 +1,12 @@
+offline:
+  require:
+    auc_delta: ">= -0.001"
+    logloss_pct: "<= +2%"
+    ece_pct: "<= +10%"
+systems:
+  target: "A10G"
+  require:
+    p95_ms: "<= 35"
+    max_mem_gb: "<= 3.0"
+    load_ms: "<= 500"
+    throughput_qps: ">= champion"

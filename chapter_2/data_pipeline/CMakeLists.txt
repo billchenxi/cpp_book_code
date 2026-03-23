@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.18)
+project(custom_dataset_demo CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_PREFIX_PATH "${CMAKE_CURRENT_LIST_DIR}/../../libtorch")
+find_package(Torch REQUIRED)
+add_executable(custom_dataset_demo custom_dataset_demo.cpp)
+target_link_libraries(custom_dataset_demo "${TORCH_LIBRARIES}")
